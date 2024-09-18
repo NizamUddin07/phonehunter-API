@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Hunter API</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Hunter API</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h2 class="text-3xl">Phone Hunting</h2>
-    </header>
-    <main>
-        <div id="phone-container" class="grid grid-cols-1, md:grid-cols-2, lg:grid-cols-3 gap-2">
-            <!-- <div class="card card-compact bg-base-100 w-96 shadow-xl">
+
+<body class="ml-10">
+  <header>
+    <h2 class="text-3xl">Phone Hunting</h2>
+  </header>
+  <section>
+    <input type="text" id="search-field" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs mt-10 mb-10" />
+    <button class="btn btn-secondary" onclick="handleSearch()">Secondary</button>
+  </section>
+  <main>
+    <div id="phone-container" class="grid grid-cols-1, md:grid-cols-2, lg:grid-cols-3 gap-5">
+      <!-- <div class="card card-compact bg-base-100 w-96 shadow-xl">
                 <figure>
                   <img
                     src="${phone.image}"
@@ -27,9 +33,10 @@
                   </div>
                 </div>
               </div> -->
-        </div>
-    </main>
-    <footer></footer>
-    <script src="JS/phone.js"></script>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="JS/phone.js"></script>
 </body>
+
 </html>
